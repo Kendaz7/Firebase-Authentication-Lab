@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>All Tweets</h1>
+<br>
+{% for i in filtered_tweets %}
+<h4>Title : {{ i['title'] }}</h4>
+<h4>Text : {{ i['text'] }}</h4>
+<h4>Time : {{ i['time'] }}</h4>
+
+<br><br>
+{% endfor %}
+</body>
+</html>
